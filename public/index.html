@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <meta name="title" property="og:title" content="My Portfolio">
+        <meta name="image" property="og:image" content="https://av1082.github.io/portfolio/assets/img/Portfolio.png">
+        <meta name="description" property="og:description" content="A personal portfolio built by Anna Vaigast using JS, HTML, CSS">
+        <meta property="og:type" content="Website">
+        <meta name="author" content="Anna Vaigast">
+        
+        <!--=============== FAVICON ===============-->
+        <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
+        <link rel="manifest" href="assets/img/site.webmanifest">
+
+        <!--=============== BOXICONS ===============-->
+        <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+
+        <!--=============== SWIPER CSS ===============-->
+        <link rel="stylesheet" href="">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+
+        <title> Anna Vaigast </title>
+    </head>
+    <body>
+        <!--=============== HEADER ===============-->
+        <header class="header" id="header">
+            <nav class="nav container">
+              <a href="#home" class="nav__logo">Anna</a>
+                <div class="nav__menu" id="nav-menu">
+                  <ul class="nav__list grid">
+                    <li class="nav__item">
+                      <a href="#home" class="nav__link home">
+                        <i class="uil uil-estate nav__icon"></i> Home
+                      </a>
+                    </li>
+                    <li class="nav__item">
+                      <a href="#about" class="nav__link">
+                        <i class="uil uil-user nav__icon"></i> About
+                      </a>
+                    </li>
+                    <li class="nav__item">
+                      <a href="#skills" class="nav__link">
+                        <i class="uil uil-file-alt nav__icon"></i> Skills
+                      </a>
+                    </li>
+                    <li class="nav__item">
+                      <a href="#experience" class="nav__link">
+                        <i class="uil uil-briefcase-alt nav__icon"></i> Experience
+                      </a>
+                    </li>
+                    <li class="nav__item">
+                      <a href="#portfolio" class="nav__link">
+                        <i class="uil uil-scenery nav__icon"></i> Porfolio
+                      </a>
+                    </li>
+                    <li class="nav__item">
+                      <a href="#contact" class="nav__link">
+                          <i class="uil uil-message nav__icon"></i> Contact
+                      </a>
+                    </li>
+                  </ul>
+                  <i class="uil uil-times nav__close" id="nav-close"></i>
+                </div>
+      
+                <div class="nav__btns">
+                    
+                    <i class="bx bx-moon change-theme" id="theme-button"></i>
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="uil uil-apps"></i>
+                    </div>
+                </div>
+      
+            </nav>
+          </header>
+
+        <!--=============== MAIN ===============-->
+        <main class="main">
+            <!--=============== HOME ===============-->
+            <section class="home section" id="home">
+                <div class="home__container container grid">
+                    <div class="home__data">
+            
+                        <h1 class="home__name">Hello, I'm Anna</h1>
+                        <h3 class="home__education">Full Stack Engineer</h3>
+                        <span class="home__greeting">Passionate about developing user-centric products that combine efficiency, simplicity, and design</span>
+
+                        <div class="home__buttons">
+                            <a href="#contact" class="button button--ghost">
+                                Contact Me <i class="uil uil-message button__icon"></i>
+                              </a>
+                        </div>
+                    </div>
+                    
+                    <div class="home__handle">
+                        <img src="assets/img/AV-pic.png" alt="me" class="home__img">
+                    </div>
+                   
+
+                    <div class="home__socials" style="position: absolute; bottom: 2.5rem;
+                    left: 0;
+                    display: grid;
+                    row-gap: .5rem;">
+
+                        <a href="https://www.linkedin.com/in/anna-vaigast/" target="_blank" class="home__social-link">
+                            <i class='bx bxl-linkedin-square'></i>
+                        </a>
+                        <a href="https://www.github.com/av1082" target="_blank" class="home__social-link">
+                            <i class='bx bxl-github'></i>
+                        </a> 
+                        <a href="https://www.instagram.com/anyavaigast/" target="_blank" class="home__social-link">
+                            <i class='bx bxl-instagram'></i>
+                        </a>  
+                    </div>
+
+                    <a href="#about" class="home__scroll">
+                        <i class='bx bx-mouse home__scroll-icon'></i>
+                        <span class="home__scroll-name">Scroll Down</span>
+                    </a>
+                </div>
+            </section>
+            
+            <!--=============== ABOUT ===============-->
+            <section class="about section" id="about">
+                <h2 class="section__title">About Me</h2>
+                <span class="section__subtitle">
+                    Medical Student &#8594; Software Engineer
+                </span>
+                
+
+                <div class="about__container container grid">
+                    <img src="assets/img/Me.jpeg" alt="" class="about__img">
+                    <div class="about__data">
+                        <!-- <div class="about__info">
+                            <div class="about__box">
+
+                                <h3 class="about__title"></h3>
+                                <span class="about__subtitle"></span>
+                            </div>
+                            <div class="about__box">
+                                <h3 class="about__title"></h3>
+                                <span class="about__subtitle"></span>
+                            </div>
+                            <div class="about__box">
+                                <h3 class="about__title"></h3>
+                                <span class="about__subtitle"></span>
+                            </div>
+                        </div> -->
+                        <p class="about__description">
+                            My path into tech is a non-conventional one. Halfway through medical school I decided to take a leave of absence and learn how to code. Several online classes later, I realized that I had a passion for software development. This led me to enroll in a 17-week immersive coding bootcamp in NYC. Upon graduation, I worked on an exciting project in the crypto sphere, which piqued my interest in blockchain development. Currently, I am a fullstack engineer at a fintech company in NYC.
+                        </p>
+                        <a download="" href="assets/pdf/AV-Resume.pdf" class="button button--ghost">
+                            Download Resume <i class='bx bx-download' style="font-size: large;" ></i>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!--=============== SKILLS ===============-->
+        <section class="skills section" id="skills">
+            <h2 class="section__title">Skills</h2>
+            <span class="section__subtitle">My Technical Knowledge</span>
+            
+            
+            <div class="skills__container container grid">
+                <div>
+                    <div class="skills__content skills__close">
+                        
+                        <div class="skills__header">
+                            <i class='bx bx-code-curly skills__icon'></i>
+                            <div>
+                                <h1 class="skills__title">Languages</h1>
+                            </div>
+                            <i class="uil uil-angle-down skills__arrow"></i>
+                        </div>
+                        
+                        <div class="skills__list grid">
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name"><i class='bx bxl-javascript bx-tada' style='color:#f3de13'  ></i> Javascript</h3>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name"><i class='bx bxl-html5 bx-tada' style='color:#f37113'  ></i> HTML</h3>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name"><i class='bx bxl-css3 bx-tada' style='color:#4a9ada'  ></i> CSS</h3>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="skills__content skills__close">
+                        <div class="skills__header">
+                            <i class="uil uil-wrench skills__icon"></i>
+                            <div>
+                                <h1 class="skills__title">Frameworks</h1>
+                            </div>
+                            <i class="uil uil-angle-down skills__arrow"></i>
+                        </div>
+                        <div class="skills__list grid">
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name"><i class='bx bxl-react bx-spin' style='color:#81d5ff'  ></i> React</h3>                                </div>
+
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name"><i class='bx bxl-react bx-spin' style='color:#81d5ff'  ></i> React Native</h3>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name"><i class='bx bxl-nodejs bx-tada' style='color:#6dbb44'  ></i> Node JS</h3>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name"><i class='bx bxl-redux bx-spin' style='color:#812bd8'  ></i> Redux</h3>                                
+                                </div>
+                            </div>
+                            
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name"><i class='bx bxs-cog bx-spin bx-flip-horizontal' style='color:#A0ABB5' ></i> Express</h3>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name"><i class='bx bx-cube bx-rotate-180 bx-spin' style='color:#2d73c9'  ></i> Sequelize</h3>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name"><i class='bx bxl-git bx-tada' style='color:#f55b14'  ></i></i> Git</h3>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name"><i class='bx bxl-aws bx-tada' style='color:#A0ABB5'  ></i> AWS</h3>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="skills__content skills__close">
+                        <div class="skills__header">
+                            <i class="uil uil-database skills__icon"></i>
+                            <div>
+                                <h1 class="skills__title">Databases</h1>
+                            </div>
+                            <i class="uil uil-angle-down skills__arrow"></i>
+                        </div>
+                        <div class="skills__list grid">
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name"><i class='bx bxs-data bx-tada' style='color:#417eb5'  ></i> PostgreSQL</h3>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name"><i class='bx bxl-firebase bx-tada' style='color:#f9c830'  ></i> Firebase</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="skills__content skills__close">
+                        <div class="skills__header">
+                        <i class="uil uil-book-open skills__icon"></i>
+                            <div>
+                                <h1 class="skills__title">Interdisciplinary</h1>
+                            </div>
+                            <i class="uil uil-angle-down skills__arrow"></i>
+                        </div>
+                        <div class="skills__list grid">
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name"><i class='bx bxs-school bx-tada' style='color:#fb5959'  ></i> Tutoring</h3>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name"><i class='bx bxl-bitcoin bx-tada' style='color:#f7930f'  ></i> Blockchain</h3>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name"><i class='bx bxs-bank bx-tada' style='color:#3c9050'  ></i> Finance</h3>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>   
+            </div>
+        </section>
+
+            <!--=============== EXPERIENCE ===============-->
+            <section class="qualification section" id="experience">
+                <h2 class="section__title">Experience</h2>
+                <span class="section__subtitle">My Professional Background</span>
+                
+    
+                <div class="qualification__container container">
+                    
+                    <div class="qualification__tabs">
+                        <div class="qualification__button button--flex qualification__active" data-target='#education'>
+                            <i class="uil uil-graduation-cap qualification__icon"></i> Education
+                        </div>
+                        <div class="qualification__button button--flex" data-target="#work">
+                            <i class="uil uil-briefcase-alt qualification__icon"></i> Work
+                        </div>
+                    </div>
+    
+                    <div class="qualification__sections">
+                        <div class="qualification__content qualification__active" data-content id="education">
+    
+                            <div class="qualification__data">
+                                <div>
+                                    <h3 class="qualification__title">Bachelor of Arts, Biochemistry &#38; Math </h3>
+                                    <span class="qualification__subtitle">New York University</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i> 2011 - 2015
+                                    </div>
+                                </div>
+    
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+                            </div>
+    
+                            <div class="qualification__data">
+                                <div></div>
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+                                
+                                <div>
+                                    <h3 class="qualification__title">MD Candidate</h3>
+                                    <span class="qualification__subtitle">Albany Medical College</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i> 2018 - 2020
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="qualification__data">
+                                <div>
+                                    <h3 class="qualification__title">Software Engineering Certificate</h3>
+                                    <span class="qualification__subtitle">Fullstack Academy of Code</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i> 2021 - 2021
+                                    </div>
+                                </div>
+    
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="qualification__content" data-content id="work">
+    
+                            <div class="qualification__data">
+                                <div></div>
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+                                <div>
+                                    <h3 class="qualification__title">Clinical Research Coordinator</h3>
+                                    <span class="qualification__subtitle">Mount Sinai Beth Israel</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i> 2015 - 2018
+                                    </div>
+                                </div>
+                                
+                            </div>
+    
+                            <div class="qualification__data">
+                                
+                                <div>
+                                    <h3 class="qualification__title">Javascript Tutor</h3>
+                                    <span class="qualification__subtitle">Club Z</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i> 2020 - Present
+                                    </div>
+                                </div>
+    
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+    
+                            </div>
+    
+                            <div class="qualification__data">
+                                <div></div>
+    
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    
+                                </div>
+    
+                                <div>
+                                    <h3 class="qualification__title">Full Stack Engineer</h3>
+                                    <span class="qualification__subtitle">Trepp, Inc.</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i> 2022 - Present
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                </div>
+            </section>
+
+            <!--=============== WORK ===============-->
+            <section class="work section" id="portfolio">
+                <h2 class="section__title">Portfolio</h2>
+                <span class="section__subtitle">Recent Projects</span>
+                
+                <div class="work__filters">
+                    <span class="work__item active-work" data-filter='all'>All</span>
+                    <span class="work__item" data-filter='.react'>React</span>
+                    <span class="work__item" data-filter='.reactnative'>React Native</span>
+                </div>
+
+                <div class="work__container container grid">
+                    <div class="work__card">
+                        <img src="assets/img/Portfolio.png" alt="" class="work__img">
+                        <h3 class="work__title">My Portfolio</h3>
+                        <a href="#" class="work__button">
+                            Demo <i class='bx bx-right-arrow-alt work__icon'></i>
+                        </a> 
+                    </div>
+                    <div class="work__card mix react">
+                        <img src="assets/img/CryptoBillies.png" alt="" class="work__img">
+                        <h3 class="work__title">CryptoBillies</h3>
+                        <a href="https://cryptobillies.io/" target="_blank" class="work__button">
+                            Demo <i class='bx bx-right-arrow-alt work__icon'></i>
+                        </a> 
+                    </div>
+                    <div class="work__card mix reactnative">
+                        <img src="assets/img/Pawsome.png" alt="" class="work__img">
+                        <h3 class="work__title">Pawsome</h3>
+                        <a href="https://www.youtube.com/watch?v=tVqKGOVkX5s" target="_blank" class="work__button">
+                            Demo <i class='bx bx-right-arrow-alt work__icon'></i>
+                        </a> 
+                    </div>
+                    <div class="work__card mix react">
+                        <img src="assets/img/Article.png" alt="" class="work__img">
+                        <h3 class="work__title">Forms with Formik & Yup</h3>
+                        <a href="https://medium.com/@annavaigast/react-native-forms-made-easy-using-formik-yup-and-firestore-1d69f612d300" target="_blank" class="work__button">
+                            Demo <i class='bx bx-right-arrow-alt work__icon'></i>
+                        </a> 
+                    </div>
+                    <div class="work__card mix react">
+                        <img src="assets/img/PlateHopper.png" alt="" class="work__img">
+                        <h3 class="work__title">Plate Hopper</h3>
+                        <a href="https://plate-hopper.herokuapp.com/" target="_blank" class="work__button">
+                            Demo <i class='bx bx-right-arrow-alt work__icon'></i>
+                        </a> 
+                    </div>
+                </div>
+            </section>
+
+            <!--=============== CONTACT ===============-->
+            <section class="contact section" id="contact">
+                <h2 class="section__title">Contact Me</h2>
+                <span class="section__subtitle">Say Hello!</span>
+
+                <div class="contact__container container grid">
+                    <div class="contact__content">
+                        <h3 class="contact__title">
+                            Let's chat!
+                        </h3>
+                        <div class="contact__info">
+                            <div class="contact__card">
+                                <i class='bx bx-mail-send contact__card-icon'></i>
+                                <h3 class="contact__card-title">Email</h3>
+                                <span class="contact__card-data">av1082@nyu.edu</span>
+
+                                <a href="mailto:av1082@nyu.edu" target="_blank" class="contact__button">
+                                    Email me <i class='bx bx-right-arrow-alt contact__button-icon'></i>
+                                </a>
+                            </div>
+
+                            <div class="contact__card">
+                                <i class='bx bxl-whatsapp contact__card-icon'></i>
+                                <h3 class="contact__card-title">Whatsapp</h3>
+                                <span class="contact__card-data">+1 (201) 562-5074</span>
+
+                                <a href="https://wa.me/012015625074/?text=Hello, let's connect!" target="_blank" class="contact__button">
+                                    Message me <i class='bx bx-right-arrow-alt contact__button-icon'></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact__content">
+                        <h3 class="contact__title">
+                            Ask me a question
+                        </h3>
+                        <form class="contact__form">
+                            <div class="contact__form-div">
+                                <label for="" class="contact__form-tag">Name</label>
+                                <input type="text" placeholder="Insert your name" class='contact__form-input' id='fullname'>
+                            </div>
+                            <div class="contact__form-div">
+                                <label for="" class="contact__form-tag">Email</label>
+                                <input type="email" placeholder="Insert your email address" class='contact__form-input' id='email'>
+                            </div>       
+                            <div class="contact__form-div">
+                                <label for="" class="contact__form-tag">Subject</label>
+                                <input type="text" placeholder="Insert your subject" class='contact__form-input' id='subject'>
+                            </div>                       
+                            <div class="contact__form-div contact__form-area">
+                                <label for="" class="contact__form-tag">Questions</label>
+                                <textarea name="" id="message" cols="30" rows="10" placeholder="Ask me something..." class="contact__form-input"></textarea>
+                            </div>
+
+                            <input type="submit" value="Send Message" class="button">
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!--=============== FOOTER ===============-->
+        <footer class="footer">
+            <div class="footer__container container">
+                <h1 class="footer__title">
+                    Anna
+                </h1>
+                <ul class="footer__list">
+                    <li>
+                        <a href="#about" class="footer__link">About</a>
+                    </li>
+                    <li>
+                        <a href="#skills" class="footer__link">Skills</a>
+                    </li>
+                    <li>
+                        <a href="#portfolio" class="footer__link">Portfolio</a>
+                    </li>
+                </ul>
+
+                <ul style="display: flex; justify-content: center; column-gap: 1.25rem;">
+                    <a href="https://www.linkedin.com/in/anna-vaigast/" target="_blank" class="footer__social-link">
+                        <i class="bx bxl-linkedin-square"></i>
+                    </a>
+                    <a href="https://github.com/av1082" target="_blank" class="footer__social-link">
+                        <i class="bx bxl-github"></i>
+                    </a>
+                    <a href="https://www.instagram.com/anyavaigast/" target="_blank" class="footer__social-link">
+                        <i class="bx bxl-instagram"></i>
+                    </a>
+                </ul>
+
+                <span class="footer__copy">
+                    By Anna Vaigast
+                </span>
+            </div>
+        </footer>
+
+        <!--=============== SCROLLREVEAL ===============-->
+        <script src="assets/js/scrollreveal.min.js"></script>
+
+        <!--=============== MIXITUP FILTER ===============-->
+        <script src="assets/js/mixitup.min.js"></script>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
