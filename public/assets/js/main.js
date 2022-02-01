@@ -124,7 +124,7 @@ contactForm.addEventListener('submit', (e) => {
             subject.value = ''
             message.value = ''
         } else {
-            alert('Something went wrong :(')
+            alert('This feature is currently in dev. Please use the contact info on the left!')
         }
     }
 
